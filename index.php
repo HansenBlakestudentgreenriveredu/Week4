@@ -14,12 +14,17 @@ require_once ('vendor/autoload.php');
 $f3 = Base::instance();
 
 // Define a default route
-$f3->route('GET /', function() {
+$f3->route('GET /', function($f3) {
     echo '<h1>Pets</h1>';
+
+    // Add data to hive
+    $f3->set('name', 'Blake');
+    $f3->set('movie', 'Grinch');
+    $f3->set('car', 'Lexus');
 
     // Render a view page
     $view = new Template();
-    echo $view->render('views/home.html');
+    echo $view->render('views/index.html');
 });
 
 // Run fat-free

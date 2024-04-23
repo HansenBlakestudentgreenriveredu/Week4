@@ -1,0 +1,14 @@
+{
+  "name": "views/home.html",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "blake",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
